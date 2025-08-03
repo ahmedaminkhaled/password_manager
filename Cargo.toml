@@ -1,0 +1,16 @@
+[package]
+name = "password_manager"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+aes = "0.8"              # or chacha20poly1305 if you prefer
+rand = "0.8"
+sha2 = "0.10"
+rpassword = "7.0"        # for hidden input (like typing passwords)
+base64 = "0.21"
+chacha20poly1305 = "0.10.1"
+pbkdf2 = "0.12.2"
+fs = "0.0.5"
